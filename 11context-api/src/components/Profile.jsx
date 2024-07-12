@@ -6,8 +6,8 @@ function Profile() {
 
     if (!user) return <div>Please login</div>
 
-    return <div>Welcome {user.username}</div>
-
+    return <div>Welcome {user}</div>
+    console.log(user);
 }
 
 export default Profile

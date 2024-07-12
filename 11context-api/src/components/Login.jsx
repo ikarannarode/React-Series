@@ -7,15 +7,16 @@ function Login() {
     const { setUser } = useContext(UserContext)
 
 
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
         e.preventDefault();
         setUser(username, password);
 
 
     }
     return (
+
         <div>
-            <h2>Login</h2>
+            <br />
             <input type="text" name=""
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
@@ -25,7 +26,9 @@ function Login() {
                 onChange={(e) => setPassword(e.target.value)}
                 name="" id="" placeholder='Password' />
             <button onClick={handleSubmit}>Submit</button>
+            <br />
         </div>
+
     )
 }
 
